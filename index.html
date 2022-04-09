@@ -5,8 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana speak</title>
+    <style>
+        textarea{
+            width: 90%;
+            height: 20vh;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 20px;
+            background-color: rgba(220, 227, 100, 0.874);
+        }
+        #output{
+            background-color: rgba(220, 227, 100, 0.874);
+            border: 1px solid black;
+            width: 90%;
+            height: 20vh;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 15px;
+        }
+    </style>
+    
 </head>
-<body>
-    <h1>Talk Banana</h1>
+<body style="background-color: rgb(254, 254, 251);">
+    <h1 style="text-align: center;">Talk Banana</h1>
+    <textarea id="txt-input" placeholder="Enter your sentence in English here."></textarea>
+    <button id="btn-translate">Translate</button>
+    <div style="font-size:large;">Output will come here 👇🏻</div>
+    <div id="output"></div>
+    <script src="app.js" type="text/javascript"></script>
+
 </body>
 </html>
